@@ -89,7 +89,7 @@ def download_audio_playlist():
 
 def video_to_audio():
   video_file = input("Enter the video file with complete path: ")
-  audio_file = input("Enter the output audio file name: ")
+  audio_file = input("Enter the output audio file name with destination path: ")
   try:
     video = VideoFileClip(video_file)
     audio = video.audio
@@ -167,6 +167,7 @@ while True:
     elif choice == "7":
         merge_videos()
     elif choice == "0":
+        print("Thank you for utilizing me!!!!\nPlease visit again.")
         break
     else:
         print("Invalid choice. Please enter a number from 0 to 7.")
